@@ -1,0 +1,31 @@
+<!-- Usando a classe container do Bootstrap para espaçamento consistente -->
+<div class="container mt-4">
+
+  <!-- Seção de cabeçalho com maior hierarquia semântica -->
+  <header class="text-center mb-3">
+    <h2>Destaques do dia!</h2> <!-- h2 para mais importância na hierarquia de cabeçalhos -->
+    <p class="lead">Aproveite as super ofertas que separamos para você:</p>
+  </header>
+  <hr/>
+  <!-- Linha de cards para as ofertas -->
+  <div class="row">
+    <!-- Utilização de diretiva ngFor com rastreamento por index para melhor performance -->
+    @for (oferta of ofertas; track ofertas) {
+      <div class="col-md-4 mb-4">
+        <div class="card h-100"> <!-- Classe h-100 para igualar altura dos cards -->
+          <img alt="{{ oferta.titulo }}" class="card-img-top" [src]="oferta.imagens[0].url">
+          <div class="card-body">
+            <h3 class="card-title">{{ oferta.titulo }}</h3> <!-- h3 mantém a hierarquia dos cabeçalhos -->
+            <p class="card-text">{{ oferta.descricao_oferta }}</p>
+            <p class="font-weight-bold text-primary">R$ {{ oferta.valor }}</p>
+          </div>
+          <div class="card-footer bg-transparent">
+            <button (click)="navigateToOferta(oferta.id)" class="btn btn-primary">Ver oferta</button>
+          </div>
+        </div>
+      </div>
+    } @empty {
+      <p>sem ofertas</p>
+    }
+  </div>
+</div>
