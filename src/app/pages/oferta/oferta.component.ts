@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import {Oferta} from "../../model/Oferta";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, RouterLink, RouterOutlet} from "@angular/router";
 import {OfertasService} from "../../services/ofertas.service";
 
 @Component({
   selector: 'app-oferta',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterOutlet,
+    RouterLink
+  ],
   templateUrl: './oferta.component.html',
   styleUrl: './oferta.component.css'
 })
