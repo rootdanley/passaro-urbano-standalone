@@ -143,6 +143,9 @@
       "imagens": [
         {
           "url": "/assets/ofertas/6/img2.jpg"
+        },
+        {
+          "url": "/assets/ofertas/5/img2.jpg"
         }
       ]
     },
@@ -157,34 +160,11 @@
       "imagens": [
         {
           "url": "/assets/ofertas/5/img1.jpg"
+        },
+        {
+          "url": "/assets/ofertas/5/img2.jpg"
         }
       ]
-    },
-    {
-      "id": "5727"
-    }
-  ],
-  "artigos": [
-    {
-      "id": 1,
-      "titulo": "Como criar uma API REST com JSON Server",
-      "autor": "Jane Doe",
-      "conteudo": "Conteúdo do artigo aqui",
-      "publicadoEm": "2024-04-01"
-    },
-    {
-      "id": 2,
-      "titulo": "Como criar uma API REST",
-      "autor": "danley",
-      "conteudo": "Conteúdo do artigo aqui",
-      "publicadoEm": "2024-04-01"
-    },
-    {
-      "id": 3,
-      "titulo": "Como criar uma API REST",
-      "autor": "danley",
-      "conteudo": "Conteúdo do artigo aqui",
-      "publicadoEm": "2024-04-01"
     }
   ]
 }

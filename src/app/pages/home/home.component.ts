@@ -2,12 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {Oferta} from "../../model/Oferta";
 import {OfertasService} from "../../services/ofertas.service";
 import {Router} from "@angular/router";
+import {NgOptimizedImage} from "@angular/common";
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
